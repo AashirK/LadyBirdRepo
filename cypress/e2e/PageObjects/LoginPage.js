@@ -5,7 +5,8 @@ class LoginPage
 
     visit()
     {
-        cy.visit("https://qa.perfectdaylive.com/login")
+        const visit = cy.visit("https://qa.perfectdaylive.com/login")
+        return this
     }
 
     fillEmail(value)
