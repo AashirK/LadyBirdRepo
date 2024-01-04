@@ -13,15 +13,14 @@ describe('Test Suite',function(){
         lp.fillPassword('Boolhundred1.')
         lp.loginButton()
 
-        cy.wait(5000)
     })
 
-    it("Negative Login test case",function(){
+   it("Negative Login test case",function(){
         lp.visit()
         lp.fillEmail('markram@mailinator.com')
         lp.fillPassword('Boolhundred2.')
         lp.loginButton()
-    })
+    }) 
 
 
 
